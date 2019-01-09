@@ -74,6 +74,26 @@
 - proposition that CS is a field of empirical inquiry
 - sufficiency
 	- attempts to construct and test specific physical symbol systems for capacity for intelligence
+	- #artificial intelligence#
 - necessity
 	- whether specific intelligent systems can be explained as the working of a physical symbol system
 		- humans
+	- #cognitive psychology#
+
+-----------------------------------------------------------
+    Constructing Intelligent Systems
+-----------------------------------------------------------
+- paradigm similar to testing germ theory
+	1. identify a task domain needing intelligence
+	2. construct a program for a digital computer to handle tasks in this domain
+- start with easy and well-structured tasks
+	- puzzles and games
+	- scheduling and allocation
+	- simple induction
+- slow and steady progress
+	- increasing competency in each domain
+	- expanding the number of domains
+- additional efforts in generalizing programs
+	- separate out general problem solving from particular task domains
+		- general problem solver (GPS)
+	- generalized representation for goals and plans
