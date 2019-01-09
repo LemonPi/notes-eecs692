@@ -33,3 +33,34 @@
 	- if the expression designates a process and given the expression the system can carry out the process
 - hypothesis of a law of qualitative structure for symbol systems
 	- having means for general intelligent action <-> physical symbol system
+
+-----------------------------------------------------------
+    Symbol development history
+-----------------------------------------------------------
+- turing machines
+	- several independent, equivalent notions were developed
+	- development in the 30's
+	- accomplished half the principle of interpretation
+		- machine could run from a description
+			- automatic formal symbol manipulation
+- stored program
+	- mid 40's
+	- programs are now data
+		- implicit in the turing machine model
+	- accomplished second half of the principle of interpretation
+		- system's own data can be interpreted
+- list processing
+	- 1956
+	- contents of data structures became symbols
+		- patterns that designated and had referents
+	- lists held addresses
+		- allowed access to other lists
+			- list structures
+	- 3 developments
+		1. dynamic memory structure
+			- operations for building and modifying structure
+		2. abstraction of data types
+		3. model of designation
+- LISP
+	- 1959-1960
+	- abstracting list structures out of concrete machines
