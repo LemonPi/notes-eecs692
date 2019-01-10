@@ -165,3 +165,9 @@
 - weak methods reduce expansion but not enough knowledge to prevent search
 - strong methods do not need to branch
 	eg. linear programming
+- new ways of extracting and using information
+	1. nonlocal use of information
+	2. storing semantic info about task domain
+		eg. chess endgame tables
+	3. using an appropriate representation
+		- changes problem to search over representations
