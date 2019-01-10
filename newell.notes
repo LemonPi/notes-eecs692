@@ -32,7 +32,7 @@
 	- whether an expression can be interpreted
 	- if the expression designates a process and given the expression the system can carry out the process
 - hypothesis of a law of qualitative structure for symbol systems
-	- having means for general intelligent action <-> physical symbol system
+	!having means for general intelligent action <-> physical symbol system
 
 -----------------------------------------------------------
     Symbol development history
@@ -106,3 +106,14 @@
 		1. observations and experiments on human behaviour in tasks requiring intelligence
 		2. programming symbol systems to model observed human behaviour
 	- activities demonstrate the empirical nature of computer science
+
+-----------------------------------------------------------
+    Heuristic Search
+-----------------------------------------------------------
+- another law of qualitative structure
+	!physical symbol systems solve problems through heuristic search!
+		- solutions to problems are represented as symbol structures
+		- physical symbol system generate and modify symbol structures until it produces a solution structure
+	- again only empirical evidence
+- heuristic required due to practical limitations
+- consider system processing one thing at a time
