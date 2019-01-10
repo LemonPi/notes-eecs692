@@ -144,3 +144,12 @@
 	3. generator can behave differentially based on detected pattern
 		- must be information in the problem space
 		- symbol system must be capable of extracting it
+- mechanisms used by symbol systems for intelligent problem solving
+	- each successive expression is produced by modifying the one previously
+	- modifications depend on 2 kinds of info
+		1. constant over whole class of problems
+			- built into the structure of the generator
+			eg. all modifications of expressions leave the equation's solution unchanged
+		2. change at each step
+			eg. detecting the difference in form between current and desired expression
+			
