@@ -134,3 +134,13 @@
 		- including start and goal
 - move generators are processes mapping one element in the problem space to another
 - intelligence would be ordering solutions generation such that actual solutions appear earlier
+
+-----------------------------------------------------------
+    Information From the Problem Space
+-----------------------------------------------------------
+- for intelligence to be exhibited, several conditions
+	1. solution distribution not random (at least some pattern we can discern)
+	2. pattern is detectible
+	3. generator can behave differentially based on detected pattern
+		- must be information in the problem space
+		- symbol system must be capable of extracting it
