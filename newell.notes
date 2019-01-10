@@ -152,4 +152,16 @@
 			eg. all modifications of expressions leave the equation's solution unchanged
 		2. change at each step
 			eg. detecting the difference in form between current and desired expression
-			
+
+-----------------------------------------------------------
+    Forms of Intelligence
+-----------------------------------------------------------
+- task of intelligence is to avoid exponential explosion of search
+	- build selectivity into generator
+		- decrease branch factor
+- means-ends analysis
+	- technique for choosing which direction to search from a node
+	- select action to reduce a specific difference between current and goal structure
+- weak methods reduce expansion but not enough knowledge to prevent search
+- strong methods do not need to branch
+	eg. linear programming
