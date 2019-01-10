@@ -117,3 +117,20 @@
 	- again only empirical evidence
 - heuristic required due to practical limitations
 - consider system processing one thing at a time
+
+-----------------------------------------------------------
+    Problems
+-----------------------------------------------------------
+- a problem is
+	1. a test for a class of symbol structures
+		- know what we want to do
+	2. a generator of symbol structures
+		- don't know how to immediately produce a solution
+- being able to test solutions doesn't mean we can create a generator constructing solutions
+	eg. knowing winning in chess is a checkmate position doesn't mean we have a generator for putting us in those situations
+- before a generator, there must be a #problem space#
+	- space of symbol structures
+		- able to represent problem situations
+		- including start and goal
+- move generators are processes mapping one element in the problem space to another
+- intelligence would be ordering solutions generation such that actual solutions appear earlier
