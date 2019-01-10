@@ -97,3 +97,12 @@
 	- separate out general problem solving from particular task domains
 		- general problem solver (GPS)
 	- generalized representation for goals and plans
+
+-----------------------------------------------------------
+    Modeling Human Symbolic Behaviour
+-----------------------------------------------------------
+- information processing psychology
+	- 2 main kinds of activities
+		1. observations and experiments on human behaviour in tasks requiring intelligence
+		2. programming symbol systems to model observed human behaviour
+	- activities demonstrate the empirical nature of computer science
