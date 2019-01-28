@@ -1,0 +1,45 @@
+-----------------------------------------------------------
+    Overview
+-----------------------------------------------------------
+- attack on research methodology
+- more false positives than the endorsed <= 0.05
+- solution is requirements for authors and guidelines for reviewers
+- assert most costly error is a false positive
+	- persistent in literature
+	- null results have many causes
+	- failure to replicate are never conclusive
+	- uncommon to publish replications
+		- low incentive to attempt replications
+- high actual false positive rate due to #researcher degrees of freedom#
+	- try out different things and only report what worked
+	- so likelihood of producing a false positive finding at 5% is greater than 5%
+	- many ambiguously correct processes allows using the one to produce the most significant data
+
+-----------------------------------------------------------
+    Experiment
+-----------------------------------------------------------
+- 2 experiments to demonstrate something false
+	- certain songs change listener's age
+	1. 30 university undergrads listen to either control song or children song and surveyed whether they felt young/old
+		- 30 (15 per group) is not statistically significant 
+		- people felt older
+	2. 20 university undergrads listen to either control song or old song and asked for birthday
+		- people were younger !?!
+
+-----------------------------------------------------------
+    Solution
+-----------------------------------------------------------
+- 6 requirements for authors
+	1. decide and report the rule for terminating data collection before collecting data
+	2. collect at least 20 obesrvations per cell
+	3. list all variables collected
+		- prevent reporting only a convenient subset
+	4. report all experimental conditions including failed manipulations
+	5. report statistical results if removed observations are included
+	6. report statistical results without any included covariate
+		- more scrutiny for results that hinge on covariates despite random assignment
+- 4 guidelines for reviewers
+	1. ensure authors follow the requirements
+	2. tolerate imperfections in result
+	3. require authors to demonstrate results do not hinge on arbitrary decisions
+	4. when not persuaded by the justifications, reviewer should ask the author to conduct an exact replication
