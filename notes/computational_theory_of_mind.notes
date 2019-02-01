@@ -1,0 +1,151 @@
+-----------------------------------------------------------
+    Overview
+-----------------------------------------------------------
+- #computational theory of mind# (CTM) claims that the mind itself is a computational system
+	- computationalists are those that endorse this theory
+		- as applied to certain important mental processes
+	- orthodox in 60s-70s
+- challenges to CTM recently
+	- need to explain what one means when describing the mind "computes"
+	- need to argue the mind computes in the relevant sense
+
+-----------------------------------------------------------
+    Turing machines
+-----------------------------------------------------------
+- formal analysis of computability
+- a Turing machine is an abstract model
+	- idea computing device
+		- unlimited time
+		- unlimited space
+	- manulates symbols
+		- drawn from finite alphabet
+		- inscribed or erased at memory locations
+- operates on discrete strings of elements from a finite alphabet
+	- controversy over whether mental activity is better compared to analog
+
+-----------------------------------------------------------
+    Artificial intelligence
+-----------------------------------------------------------
+- aim is to construct computing machines that execute core mental tasks
+- big problem for early work is uncertainty
+	- Bayesian decision theory
+
+-----------------------------------------------------------
+    Classical computational theory of mind
+-----------------------------------------------------------
+- no assertion that the mind is programmable
+	- common misconception due to use of "computer"
+- a suitable abstract computational model literally describes core mental processes
+	- mental activity is "Turing-style computation"
+- machine functionalism
+	- introduced in 1967 to philsophy in contrast to 2 other theories
+		1. logical behaviorism
+			- mental states are behavioral dispositions
+		2. type-identity theory
+			- mental states are brain states
+	- several problems
+		1. productivity of thought
+			- can have infinity proposition
+			- only finite many machine states
+			- can't do 1-to-1 pairing
+		2. systematicity of thought
+			- propositions are not independent to one another
+			- structure exists (such as the inverse of an idea)
+			- machine functionalism identifies mental states with only unstructured machine states
+- representational theory of mind
+	- accommodates systematicity and productivity better
+	- attention is on #symbols# manipulated during computation
+	- thinking occurs in a language of thought
+		- Mentalese
+		- meaning of a complex expression is a function of its parts' meanings and the way they're combined
+	- mental activity is Turing-style computation over Mentalese
+		- store Mentalses symbols in memory
+		- manipulate those symbols
+	- addresses previous problems
+		- productivity
+			- access to finite vocabulary of Mentalese can still create infinite expressions
+		- systematicity
+			- using the same symbols in different order
+- distinguish between #computationalism# and #functionalism#
+	- computationalism asserts that mental processes are computational
+	- functionalism asserts that mental states are functional states
+
+-----------------------------------------------------------
+    Neural networks
+-----------------------------------------------------------
+- connectionism as rival to classical computationalism
+	- 1980s
+- RNN to explain memory
+- not mutually exclusive to classical computation
+	- can implement neural net in classical model
+		- all have been implemented on a digital computer
+	- can implement classical model in a NN
+		- analog RNN
+- philosophers claim NN computation is non-symbolic
+	- but Turing places very little constraints on what can be a symbol
+		- only has to be finite and writeable/inscribable
+- 2 views for how to interface with computational models
+	1. eliminative
+		- replace for Turing-style models
+	2. implementationist
+		- different abstraction levels, accommodates both
+			- Turing style is high level
+			- NN is low level (implements computation)
+- arguments for connectionism
+	1. learning
+		- models explicitly model learning through backprop and other algos
+		- no good classical models of learning
+			- classical counter by saying backprop learning is defective since it's supervised
+				- what about reinforcement learning?
+	2. speed of computation
+		- nerons much slower than silicon
+		- can't possibly execute serial comptuation at speeds matching our capabilities
+		- need massively parallel computation
+		- only effective argument against serial computation (only some)
+		- !how does a brain built from slow neurons execute sophisticated computations so quickly?!
+			- so far no one from either camp can answer this satisfactorily
+
+-----------------------------------------------------------
+    Computation and representation
+-----------------------------------------------------------
+- in philosophy, #representation# is associated with intentionality
+	- has representational content
+		- represent the world as being a certain way
+			- has properties that can be semantically evaluated
+				- truth
+				- accuracy
+				- fulfillment
+
+-----------------------------------------------------------
+    Arguments against computationalism
+-----------------------------------------------------------
+1. triviality
+	- any physical system can be described as executing computations
+	- need some implementation relation between computational models and physical systems
+2. Godel's incompleteness theorem
+	- according to some, human math > turing machine capabiliities
+	- counter argument is that existing formulations are incorrect
+		- fallacies
+		- bad assumptions
+		- errors
+3. limits of computational modeling
+	- question whether a computer can achieve human accomplishments
+4. temporal
+	- computationalism does not adequately account for temporal aspects of cognition
+	- same Turing machine can be physically built with hardware with different speed
+
+-----------------------------------------------------------
+    Problematic/Vague concepts
+-----------------------------------------------------------
+- "Mentalese symbols resemble expressions in a natural language"
+	- what does this entail concretely?
+	- seems to imply the symbols have to structured in a propositional style
+	- sentences
+	- in contrast to
+		- non-sequential structures
+			- trees
+			- maps
+		- pictures
+	- need to clarify what is a #language#
+- overuse of jargon
+	eg. "Eliminativism is a strong form of anti-realism about intentionality"
