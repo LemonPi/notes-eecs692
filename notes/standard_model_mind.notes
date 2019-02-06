@@ -1,0 +1,127 @@
+-----------------------------------------------------------
+    Overview
+-----------------------------------------------------------
+- model for human-like minds
+- synthesis from 3 cognitive architectures
+	- ACT-R
+	- Sigma
+	- Soar
+- explicitly marking consensus on certain parts of these topics
+
+-----------------------------------------------------------
+    Introduction
+-----------------------------------------------------------
+- key hypothesis is that minds are computational entities that can be implemented on a diversity of physical devices
+	- #substrate independence#
+		- natural brains
+		- general purpose computers
+- understanding of mind from different fields
+	- AI
+		- how to build artificial minds to exhibit intelligent behaviour
+	- cognitive science
+		- model natural minds
+		- understand cognitive processes that generate human thought
+	- neuroscience
+		- structure and function of brains
+		- how minds arise from brains
+	- robotics
+		- building and controlling artificial bodies
+		- how minds control such bodies
+- scope of human-like minds defined
+	- bounded rationality (hpothesized to be central to human cognition)
+		- not optimality
+	- broader than naturally inspired minds
+	- narrower than human-level intelligence
+		- excludes minds that are inhuman in achievement of intelligence
+
+-----------------------------------------------------------
+    Background
+-----------------------------------------------------------
+- regularities exist at multiple time scales
+	- biological
+		- 100us
+	- cognitive/deliberate
+		- 100ms
+		- approx the time of a simple reaction
+		- assumes physical symbol system hypothesis
+			- does not assume computation is purely symbolic
+			- evidence suggests many types of reasoning at this level best realized via non-symbolic processing
+				- statistical
+				- spacial
+	- rational
+		- 100ms-hours
+	- social
+- symbols in the standard model is that they
+	- are primitive elements
+	- relations can be defined over them
+- model of fixed structure at cognitive and above level is a #cognitive architecture#
+- paper is about consensus on what must be in a cognitive architecture for it to provide a human-like mind
+
+-----------------------------------------------------------
+    3 Cognitive Architectures
+-----------------------------------------------------------
+- ACT-R
+	- set of modules
+		- runs asynchronously and in parallel
+		- central rule based procedural module providing global control
+	- parallel processing within modules but only a single result per operation
+		- result placed in module-specific working memory buffer
+- Soar
+	- set of modules
+		- divided by working memory and long term memory
+			- procedural
+			- semantic
+			- episodic
+	- explicit learning mechanism for each type of long term memory from short term memory
+- Sigma
+	- less modular architecturally
+		- single long term memory
+	- more graphical based
+
+-----------------------------------------------------------
+    Standard Model
+-----------------------------------------------------------
+- structure and processing
+	- independent modules with distinct functionalities
+	- long term memory module
+		- separate procedural and declarative
+		- only interacts with working memory module
+	- procedural memory #cognitive cycle# to select single act per cycle
+		- each action can perform multiple modifications to working memory
+		- serial bottleneck
+		- !seriality necessary for coherent thought!?
+		- ~50ms for human behaviour
+			- corresponds to deliberate-act level
+	- quantitative metadata
+- memory and content
+	- working memory
+		- symbol structures dynamically composed from the outputs of perception and long term memories
+		- buffers
+		- temporary information for behaviour production
+		- available for inspection and modification by procedural memory
+	- procedural memory
+		- knowledge about actions
+			- how to select
+			- how to cue/execute
+		- resulting in skills and procedures
+		- pattern invocation
+			- rules with conditions and actions
+	- declarative
+		- facts and concepts
+		- persistent graph of symbolic relations
+		- no consensus on whether there is separation into semantic and episodic
+- learning
+	- all long-term knowledge are learnable
+	- based on backward flow of information
+- perception and action
+
+
+-----------------------------------------------------------
+    Questions/concerns
+-----------------------------------------------------------
+- definition and scope of human-like is vague, and also potentially arbitrary
+	- have blanket ability to omit from model by deeming "insufficiently human-like"
+- what are the strengths and weaknesses of the individual cognitive architectures
+- why formulate consensus on a higher level abstraction (human-like minds) rather than on a cognitive architecture
+	- too limiting?
+- interaction of long term memory limited to short term memory not explicit in text (but clear in diagrams)
