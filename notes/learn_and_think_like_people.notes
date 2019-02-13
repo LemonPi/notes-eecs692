@@ -1,0 +1,23 @@
+-----------------------------------------------------------
+    Overview
+-----------------------------------------------------------
+- have no learn different content and in different manner to be human-like
+	- build causal model of the world
+		- Bayesian network
+	- ground learning in physics and psychology
+	- harness compositionality and learning-to-learn
+- distinction between computational approaches to intelligence
+	1. statistical pattern recognition
+		- prediction is primary
+		- learning is about discovering features with high value states in common
+	2. model building
+		- model building is primary
+		- cognition is using models to understand the world
+		- explanation rather than prediction
+
+-----------------------------------------------------------
+    Questions/points
+-----------------------------------------------------------
+- model-based RL achieves much greater data efficiency than model-free
+	- not used broadly due to model error
+	- need to explicitly represent model error/uncertainty
