@@ -21,3 +21,4 @@
 - model-based RL achieves much greater data efficiency than model-free
 	- not used broadly due to model error
 	- need to explicitly represent model error/uncertainty
+- how to represent core concepts/inductive biases
