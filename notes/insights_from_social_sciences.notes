@@ -1,0 +1,26 @@
+-----------------------------------------------------------
+    Overview
+-----------------------------------------------------------
+- explainable AI
+- lack of objective consideration of 'good explanation'
+- people use cognitive biases and social expectations
+- motivation is to increase public usage of AI
+	- right now people don't trust it
+		- hypothesis is we can increase trust by making AI-made decisions more #explainable#
+			- consider context that human would consider
+			- can also explicitly explain decisions
+- trust is lost when users can't understand traces of observed behaviour/decisions
+- too many theories in each domain
+	- many "strong" positions for each field
+		eg. causality
+- major findings
+	1. explanations are contrastive
+		- people wnat to know why event P happened instead of some event Q
+	2. explanations are selected
+		- people don't want complete cause of an event
+			- pick a few most important causes based on bias
+	2. probabilities are not effective for communicating
+		- people don't like probabilities and statistics
+		- people want causes
+	2. explanations are social
+		- transfer of knowledge presented relative to the explainer's beliefs about the explainee's beliefs
