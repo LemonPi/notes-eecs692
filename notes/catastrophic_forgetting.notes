@@ -1,0 +1,30 @@
+-----------------------------------------------------------
+    Overview
+-----------------------------------------------------------
+- learn tasks in a sequential fashion
+	- fundamentally still very similar tasks because input/output is the same
+	- what happens if two tasks are totally independent?
+		- never learn new task
+- previously thought catastrophic forgetting is an inevitable feature of connectionist models
+	- want to maintain expertise on tasks not experienced for a long time
+- remember old tasks by selectively slowing down learning on weights important for those tasks
+	- synaptic consolidation
+- what is the advantage of maintaining memory?
+	- paper admits that doing so is worse than training individual nets on each task
+
+-----------------------------------------------------------
+    Elastic weight consolidation
+-----------------------------------------------------------
+- main contribution is approximation of parameter posterior distribution
+	- improves performance
+		- linear in parameters and data points
+	- Fischer information matrix
+- need to selectively choose which weights to constrain and how much to constrain by
+- how was network capacity measured?
+- EWC does worse than GD after passing network capacity
+- need to know which task is being performed
+	- use online clustering without supervision
+		- based on forget-me-not (FMN)
+- EQC is a soft quadratic constraint
+	- each weight pulled back towards old values
+	- amount proportional to importance for importance on previously learned tasks
