@@ -1,0 +1,37 @@
+-----------------------------------------------------------
+    Overview
+-----------------------------------------------------------
+- towards real time object detection
+- object detection split into 2 tasks
+	- object detection
+		- relative fast now with RCNN and SPPnet
+	- region proposal
+		- current bottleneck
+- use network (RPN) using same full-image features as object detection
+	- almost cost free because not computing features
+	- simultaneously predict object bounds and objectness scores at each position
+- train RPN and R-CNN alternatingly
+
+-----------------------------------------------------------
+    Introduction
+-----------------------------------------------------------
+- state of art uses region proposal and R-CNNs
+- region proposal is slow
+	- implemented on CPU
+- can make implementation faster by reimplementing for GPU, but can also make it faster by sharing computation??
+	- that argument doesn't make sense - if it's simpler to speed up by reimplementing for GPU, why do you have to share computation?
+	- goal is to make it faster, not to share computation
+- share convolutional layers with detection networks
+
+-----------------------------------------------------------
+    Optimization
+-----------------------------------------------------------
+- initialize layers by drawing weights from 0-mean Gaussian
+	- could be improved by then pretraining using stacked denoising auto encoders
+- shared layers initialized by pretraining on ImageNet
+
+-----------------------------------------------------------
+    Implementation
+-----------------------------------------------------------
+- why rescale images to 600 pixels if a typical PASCAL image is 500x375?
+	- does scaling down not work?
