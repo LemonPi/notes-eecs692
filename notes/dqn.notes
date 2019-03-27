@@ -1,0 +1,39 @@
+-----------------------------------------------------------
+    Overview
+-----------------------------------------------------------
+- use neural net to do RL
+- don't handcraft features
+- published in nature so have to sound biological lol
+- NN used to approximate Q function
+	- action-value function
+	- Q(s,a) = max{pi} E[r_t + gr_t+1 + g^2r_t+2 + ...]
+		- expected discounted total reward given current state and action
+- previous attempts to use nonlinear approximations to Q were unstable or diverged
+- addressed instability in this paper
+	1. experience replay
+		- randomize over data?
+		- smooth over changes in data distribution?
+	2. iterative update towards target values that are only periodically updated
+		- reduce correlations with target
+
+-----------------------------------------------------------
+    Experience replay
+-----------------------------------------------------------
+- store experience e_t = (s_t, a_t, r_t, s_t+1) at each time-step in data set D_t = {e_1 .. e_t}
+- learn from samples drawn uniformly from D
+
+-----------------------------------------------------------
+    Iterative update
+-----------------------------------------------------------
+- update parameters every C steps
+
+-----------------------------------------------------------
+    Weaknesses
+-----------------------------------------------------------
+- dependence on external reward
+	- sparse reward
+	- could introduce intrinsic reward for exploration
+- state is non-periodic
+	- each repeating state is a different experience due to accumulated reward
+	- could potentially use some RNN based stuff
+	- considers 4 most recent frames as input to Q
