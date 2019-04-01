@@ -26,6 +26,9 @@
     Iterative update
 -----------------------------------------------------------
 - update parameters every C steps
+- target y = r + g*max{a'} Q(s',a',theta_i-)
+	- Q approximates Q*
+	- theta_i- are parameters from some previous iteration
 
 -----------------------------------------------------------
     Weaknesses
@@ -37,3 +40,5 @@
 	- each repeating state is a different experience due to accumulated reward
 	- could potentially use some RNN based stuff
 	- considers 4 most recent frames as input to Q
+- model free
+	- data inefficient
