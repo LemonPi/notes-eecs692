@@ -1,0 +1,57 @@
+-----------------------------------------------------------
+    Overview
+-----------------------------------------------------------
+- generalized game player
+- self play (ideas from AlphaGo Zero)
+- represent game knowledge with deep CNN
+	- take board position as input
+	- output a vector of move probabilities
+	(p,v) = f(s)
+- model free
+	- seems like there's no latent variables/model?
+- run general purpose tree search algorithm (MCTS)
+	- each search is a series of simulated games
+		- start from root state
+		- end at a leaf state
+		- each state s select a move a according to the current neural net
+			- with low visit count
+			- high move probability
+			- high value averaged over leaf states that selected a from s
+	- search returns pi, with pi(a) = Pr(a|s_root)
+- contribution over AlphaGo Zero
+	- generalized algorithm
+		- includes chess, shogi, and go
+- reward at game end
+	- -1 for loss
+	- 0 for draw
+	- +1 for win
+- optimization minimizes error between predicted outcome v_t and game outcome z
+	- also to maximize similarity of policy vector p_t to search probabilities pi_t
+	- l = (z-v)^2 - pi^T logp + c||theta||^2
+		- c is L2 regularization
+
+-----------------------------------------------------------
+    Difference to AlphaGo Zero
+-----------------------------------------------------------
+- AGZ assumed games either won or lost
+	- Go can only win or lose
+	- chess and shogi can end in tie
+- AGZ estimated and optimized probability of winning
+	- AZ estimates and optimizes expected outcome
+- AGZ assumes symmetry (8 symmetry)
+	- AZ does not assume symmetry
+		- no augmenting data and transforming board during MCTS
+- AGZ replaced best player only if new player won by margin of 55% over iteration
+	- AZ maintains a single network to update continuously
+
+-----------------------------------------------------------
+    Training
+-----------------------------------------------------------
+- same hyperparameters and network architecture to all games
+- different exploration noise and learning rate schedule
+- each game trained separately
+- train 700k steps in 4k minibatches
+	- starting from randomly initialized parameters
+- using 5000 first gen TPUs to generate games
+	- 16 second gen TPUs to train neural net
+- train for 9 hours (chess), 12 hours (shogi), and 13 days (go)
