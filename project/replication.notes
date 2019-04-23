@@ -1,0 +1,23 @@
+-----------------------------------------------------------
+    Easy to replicate
+-----------------------------------------------------------
+- data sets are available
+	- download scripts
+
+-----------------------------------------------------------
+    Initial doubts/reservations
+-----------------------------------------------------------
+- iterative process of computing KNN will be really slow
+	- dependencies to each previous iteration makes gradient unstable
+- KNN output is differentiable wrt pairwise distances and temperature
+
+-----------------------------------------------------------
+    Hard to replicate
+-----------------------------------------------------------
+
+
+-----------------------------------------------------------
+    Claims to be tested
+-----------------------------------------------------------
+- what happens at really low temperature?
+	- as t -> 0 supposed to converge to deterministic distribution (hard kNN)
